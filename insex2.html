@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Подменю на CSS</title>
+<style>
+
+* html ul li {
+  float: left;
+}
+* html ul li a {
+  height: 1%;
+}
+ul {
+  border-bottom: 1px solid #000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+}
+ul li {
+  position: relative;
+}
+ul li a {
+  display: block;
+  border: 1px solid #000;
+  border-bottom: 1px;
+  padding: 5px;
+  text-decoration: none;
+}
+li ul {
+  display: none;
+  left: 99px;
+  position: absolute;
+  top: 0;
+}
+li:hover ul {
+  display: block;    
+}
+    
+width: expression(document.body.clientWidth > 800 ? "20%" : "180px"); // for ie6    
+    
+a:link, a:visited, a:active {
+  color: #00f;  
+}
+    
+p {
+  text-indent: 10px;
+}    
+    
+</style>        
+    
+</head>
+<body>    
+<ul>
+  <li>
+    <a href="#">Главная</a>   </li>
+  <li>
+    <a href="#">Меню 1</a>
+    <ul>
+      <li>
+        <a href="#">Подменю 1</a>
+      </li>
+      <li>
+        <a href="#">Подменю 2</a>
+      </li>
+      <li>
+        <a href="#">Подменю 3</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">Меню 2</a>
+    <ul>
+      <li>
+        <a href="#">Подменю4</a>
+      </li>
+      <li>
+        <a href="#">Подменю 5</a>
+      </li>
+      <li>
+        <a href="#">Подменю 6</a>
+      </li>
+      <li>
+        <a href="#">Подменю7</a>
+      </li>
+      <li>
+        <a href="#">Подменю 8</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+    
+    <p>Читая какую-нибудь книгу, газету, журнал да и вообще любой нормальный текст, Вы встречали множество абзацов, причём первая строка каждого из них содержит небольшой отступ. В этой статье я покажу наилучший вариант задания отступов у абзаца через CSS.</p>
+
+<p>Безусловно, любое количество пробелов можно вставить с помощью <b>&amp;nbsp;</b>, тем самым, подобрав необходимый отступ, но, наверняка, Вы понимаете, что данный способ, мягко говоря, неудобный. А решение этой задачи очень простое.</p>
+
+<p>Вы уже должны знать, что в HTML абзац создаётся с помощью тега &lt;<b>p</b>&gt;. Таким образом, каждый абзац должен быть в своём теге &lt;<b>p</b>&gt;. А для создания отступов первой строки каждого абзаца достаточно подключить такой CSS-код:</p>
+    
+    </body>  
+</html>

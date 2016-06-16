@@ -1,0 +1,70 @@
+<html>
+
+<head>
+<title>Без картинок</title>
+<style>
+    
+.roundborder {
+  border: 2px solid #ffd460;
+}
+.roundborder div {
+  background: url(../images/t-l.png) top left no-repeat;
+  margin: -2px;
+  position: relative;
+}
+.roundborder div div {
+  background: url(../images/t-r.png) top right no-repeat;
+  margin: 0;
+}
+.roundborder div div div {
+  background: url(../images/b-r.png) bottom right no-repeat;
+}
+.roundborder div div div div {
+  background: url(../images/b-l.png) bottom left no-repeat;
+  padding: 20px;
+}
+    
+ul {
+  list-style-image: url("images/marker.gif");
+}    
+
+body {
+  background: url("images/bg.jpg") repeat-x #dedede;
+}
+    
+/*    
+body {
+  background: url("images/bg.jpg") repeat-y center #dedede;
+}
+*/    
+/*    
+body {
+  background: url("images/bg.jpg") no-repeat #dedede;
+}    
+*/
+    
+</style>        
+    
+</head>
+    
+<body>    
+    
+<div class="roundborder">
+  <div>
+    <div>
+      <div>
+        <div>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>    
+    
+<ul>
+  <li>Первый элемент</li>
+  <li>Второй элемент</li>
+</ul>    
+    
+</body>  
+</html>

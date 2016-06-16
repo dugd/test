@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Всплывающие подсказки</title>
+<style>
+a.help {
+  text-decoration: none;
+  color: #000000;
+  border-bottom: dashed 1px #000;
+}
+a.help span {
+  display: none;
+}
+a.help:hover {
+  position: relative;
+}
+a.help:hover span {
+  position: absolute;
+  display: block;
+  left: 10px;
+  top: 25px;
+  border: solid 1px #000000;
+  background: #FFFFFF;
+  color: #000000;
+  white-space: pre;
+  padding: 2px;
+}
+    
+p:first-letter {
+      font-size: 150%;
+      color: red;
+    }
+    
+p {
+  cursor: crosshair;    
+}    
+
+/*    
+img {
+  cursor: pointer;
+}    
+*/    
+    
+</style>
+</head>
+<body>
+Одним из важнейших параметров
+ <a href="/" class="help">
+  АЦП
+  <span> Аналого-цифровой преобразователь</span>
+</a>
+ является его разрядность.
+    
+  <p>Первый абзац... Текст...</p>
+  <p>Второй абзац... Текст...</p>
+  <p>Третий абзац... Текст...</p>    
+    
+  <img src = 'myimage.jpg' alt = 'Моё изображение' style = 'cursor: help;'/>
+    
+</body>
+</html>
